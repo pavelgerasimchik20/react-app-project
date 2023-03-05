@@ -8,7 +8,7 @@ interface ProductProps {
 export function Product({product}: ProductProps){
     const [details, setDetails] = useState(false)
 
-    const btnClassName = details ? "bg-gray-300" : "bg-gray-500"
+    const btnClassName = details ? "bg-yellow-300" : "bg-yellow-400"
     const commonStyleClassName = ["py-5 px-5 pb-2 border"]
     const commonStyleClassNameWithoutBorders = ["py-2 px-2 pt-3 pb-3"]
     const btnClasses = [commonStyleClassName, btnClassName]
