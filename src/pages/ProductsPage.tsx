@@ -17,7 +17,7 @@ export function ProductsPage(){
     };
   
     return (
-      <div className="container mx-auto max-w-2xl pt-5 my-10">
+      <div className="container mx-auto max-w-2xl pt-5" style={{marginTop: 125}}>
         {loading && <Loading />}
         {error && <Error error={error} />}
         {products.map((product) => (

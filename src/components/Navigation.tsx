@@ -2,13 +2,11 @@ import {Link} from "react-router-dom"
 
 export function Navigation(){
     return (
-        <nav className="fixed top-0 right-0 left-0 h-[50px] flex justify-between px-5 bg-yellow-300 items-center text-black">
-            <span className="font-bold">
-                Geras project
-            </span>
-            <span>
-                <Link to="/" className="mr-2"> Products </Link>   
-                <Link to="/about"> About </Link>   
+        <nav className="fixed top-10 right-0 left-0 h-[75px] flex justify-center px-5 bg-white-300/50 items-center text-black">
+            <span className=" font-light text-lg">
+                <Link to="/" className="mx-12" > PRODUCTS </Link>   
+                <Link to="/contacts" className="mx-12"> CONTACTS </Link>   
+                <Link to="/gallery" className="mx-12"> GALLERY </Link>   
             </span>
         </nav>
     )
