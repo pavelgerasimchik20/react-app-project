@@ -1,4 +1,5 @@
 import {Route, Routes} from "react-router-dom"
+import { MainPage } from "./pages/MainPage"
 import { GalleryPage } from "./pages/GalleryPage";
 import { ProductsPage } from "./pages/ProductsPage";
 import { Navigation } from './components/Navigation';
@@ -17,7 +18,8 @@ function App() {
       <Navigation/>
       
       <Routes>
-        <Route path="/" element={ <ProductsPage/> } />
+        <Route path="/" element={ <MainPage/> } />
+        <Route path="/products" element={ <ProductsPage/> } />
         <Route path="/contacts" element={ <ContactsPage/> } />
         <Route path="/gallery" element={ <GalleryPage/> } />
       </Routes>
